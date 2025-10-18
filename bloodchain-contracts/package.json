@@ -1,0 +1,38 @@
+{
+  "name": "bloodchain-contracts",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf artifacts cache deployments",
+    "build": "hardhat compile",
+    "deploy:localhost": "hardhat deploy --network localhost",
+    "deploy:sepolia": "hardhat deploy --network sepolia",
+    "verify:sepolia": "hardhat verify --network sepolia",
+    "test": "hardhat test"
+  },
+  "devDependencies": {
+    "@ethersproject/abi": "^5.7.0",
+    "@fhevm/hardhat-plugin": "^0.1.0",
+    "@fhevm/solidity": "^0.8.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
+    "@nomicfoundation/hardhat-ethers": "^3.1.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.10",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/node": "^20.11.30",
+    "chai": "^4.4.1",
+    "ethers": "^6.13.2",
+    "hardhat": "^2.22.5",
+    "hardhat-deploy": "^0.12.2",
+    "hardhat-gas-reporter": "^2.2.1",
+    "rimraf": "^5.0.5",
+    "solidity-coverage": "^0.8.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "dotenv": "^16.4.5",
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}
+
+
+
