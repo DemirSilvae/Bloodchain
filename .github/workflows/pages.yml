@@ -24,17 +24,17 @@ jobs:
         with:
           node-version: 20
       - name: Install dependencies
-        working-directory: action/bloodchain-frontend
+        working-directory: bloodchain-frontend
         run: npm ci --no-audit --no-fund
       - name: Build static export
-        working-directory: action/bloodchain-frontend
+        working-directory: bloodchain-frontend
         env:
           NEXT_PUBLIC_BASE_PATH: /Bloodchain
         run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: action/bloodchain-frontend/out
+          path: bloodchain-frontend/out
   deploy:
     environment:
       name: github-pages
