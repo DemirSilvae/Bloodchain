@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start -p 3002",
     "lint": "eslint . --ext .ts,.tsx",
-    "export": "next build && next export",
+    "export": "next build",
     "serve:static": "npx serve out -l 5000"
   },
   "dependencies": {
